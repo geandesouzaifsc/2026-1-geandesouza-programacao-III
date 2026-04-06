@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --orange: #f39c12;
+    --dark-green: #228b22;
+    --yellow: #f1c40f;
+    --light-gray: #e0e0e0;
+    --border-color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--orange);
+    height: 80px;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-placeholder {
+    background: white;
+    padding: 5px 20px;
+    border: 2px solid var(--border-color);
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    background: white;
+    padding: 5px 15px;
+    border: 2px solid var(--border-color);
+    font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--dark-green);
+    padding: 80px 0;
+    color: white;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.hero-title {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    border: 2px solid var(--border-color);
+}
+
+.hero-subtitle, .hero-description {
+    background: white;
+    color: black;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    max-width: 600px;
+    border: 2px solid var(--border-color);
+}
+
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn-yellow {
+    background: var(--yellow);
+    border: 2px solid var(--border-color);
+    padding: 15px 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-white {
+    background: white;
+    border: 2px solid var(--border-color);
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+/* Cards Section */
+.destinations {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdfdfd;
+}
+
+.img-placeholder {
+    width: 100px;
+    height: 60px;
+    background: var(--light-gray);
+    border: 2px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-line {
+    width: 100%;
+    height: 12px;
+    background: var(--light-gray);
+    border: 2px solid var(--border-color);
+}
+
+/* Footer */
+.main-footer {
+    border-top: 4px solid var(--orange);
+    padding: 40px 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.footer-box-large {
+    background: var(--light-gray);
+    border: 2px solid var(--border-color);
+    padding: 15px;
+    width: 40%;
+    margin: 0 auto 20px auto;
+}
+
+.footer-bar-long {
+    background: var(--light-gray);
+    border: 2px solid var(--border-color);
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .grid-cards { grid-template-columns: repeat(2, 1fr); }
+    .hero-title { font-size: 1.2rem; }
+}
