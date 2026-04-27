@@ -1,0 +1,32 @@
+*{
+    margin: 0px; /*remove espaco em branco*/
+    padding: 0px;
+}
+nav{
+    position: fixed;
+    background: gray;
+    width: 100%;
+    height: 30px; 
+}
+#principal{
+    background: yellow;
+    height: 600px;
+    padding-top: 30px; /*distancia do menu ate o titulo*/
+}
+#produtos{
+    background: lightblue;
+    height: 600px;
+    padding-top: 30px;
+}
+
+#promocao{
+    background: lightgrey;
+    height: 600px;
+    padding-top: 30px;
+}
+
+#contato{
+    background: lightpink;
+    height: 600px;
+    padding-top: 30px;
+}

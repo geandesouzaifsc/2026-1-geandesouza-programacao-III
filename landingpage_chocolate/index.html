@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Páscoa do IFSC</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <nav>
+            <a href="#principal">Principal</a>
+            <a href="#promocao">Promoção</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <div id="principal"><h1>Páscoa do IF</h1></div>
+        <div id="promocao"><h2>Promoção</h2></div>
+        <div id="produtos"><h2>Produtos</h2></div>
+        <div id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="fnome">Nome:</label><br>
+                <input type="text" id="fnome" name="fnome" placeholder="Informe seu nome" autofocus><br>
+                <label for="femail">E-mail:</label><br>
+                <input type="email" id="femail" name="femail" placeholder="Informe seu e-mail" ><br>
+                <label for="fsenha">Senha:</label><br>
+                <input type="password" id="fsenha" name="fsenha" placeholder="*******"><br>
+                <label for="festado">Estado:</label><br>
+                <select id="festado" name="festado">
+                    <option value="pr">PR</option>
+                    <option value="sc">SC</option>
+                    <option value="rs">RS</option>
+                </select><br>
+                <label for="fmsg">Mensagem:</label><br>
+                <textarea name="fmsg" rows="5" cols="30" placeholder="Informe a mensagem"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <footer>
+            <p>&copy2026 Todos os direitos reservados para IF.</p>
+        </footer>
+    </body>
+</html>
